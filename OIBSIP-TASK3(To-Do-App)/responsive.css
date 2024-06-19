@@ -1,0 +1,67 @@
+@media screen and (max-width: 511px) {
+    .container {
+        max-width: 90%;
+        margin-top: 60px;
+    }
+    .display {
+        align-items: center;
+        padding: 15px;
+        gap: 15px;
+    }
+    .details {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .details h1 {
+        font-size: 1.5em;
+    }
+    .details h5 {
+        font-size: 1em;
+    }
+    .progressbar {
+        width: 70%; /* Reduced width of progress bar */
+    }
+    .num-display {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .num {
+        height: 60px;
+        width: 60px;
+        font-size: 24px;
+    }
+    form {
+        width: 100%; /* Ensure the form uses full width */
+        display: flex;
+        gap: 10px;
+    }
+    input {
+        height: 40px;
+        font-size: 20px;
+    }
+    button {
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+        border-radius: 50%; 
+    }
+    .task-items {
+        padding: 8px;
+    }
+    .task-items img {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
+    .task input {
+        width: 15px;
+        height: 15px;
+    }
+    .task p {
+        font-size: 14px;
+    }
+}

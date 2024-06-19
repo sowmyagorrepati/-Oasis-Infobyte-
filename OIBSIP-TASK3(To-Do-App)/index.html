@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="website icon" href="./images/icon.png">
+</head>
+<body>
+    <div class="container">
+
+        <div class="display">
+            <div class="details">
+                <h1>TO-DO LIST</h1>
+                <h5>Lets's Go</h5>
+                <div class="progressbar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+
+            <div class="num-display">
+                <p class="num">0 / 0</p>
+            </div>
+
+        </div>
+
+            <form action="">
+                <input id="taskinput"  type="text" placeholder="Enter Your Tasks">
+                <button id="newtask" type="submit">+</button>
+            </form>
+ 
+        <ul id="taskitems"></ul>
+
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>
+
