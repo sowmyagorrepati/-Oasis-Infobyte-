@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.647);
+
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    opacity: 0.6; 
+    z-index: -1; 
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
+.container {
+    padding: 30px;
+    margin: 30px;
+    background-color: black;
+    width: 380px;
+}
+.display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+}
+.btn {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.btn-end {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+.button {
+    width: 100%;
+    height: 50px;
+    border-radius: 3%;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+.operator{
+    background-color: #ffa003;
+    color: white;
+}
+.operator:active{
+    background-color: #fab547;
+}
+.top{
+    background-color: #a6a6a7;
+    color: black;
+}
+.top:active{
+    background-color: #cac8c8;
+}
+.num{
+    background-color: #303030;
+    color: white;
+}
+.num:active{
+    background-color: #656363;
+}
+@media screen and (max-width: 387px) {
+    .container {
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .display {
+        font-size: 20px;
+        height: 40px;
+    }
+    .button {
+        font-size: 16px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 296px) {
+    .container {
+        width: 250px;
+        padding: 15px;
+        margin: 15px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .display {
+        font-size: 16px;
+        height: 30px;
+    }
+    .button {
+        font-size: 14px;
+        height: 30px;
+    }
+}

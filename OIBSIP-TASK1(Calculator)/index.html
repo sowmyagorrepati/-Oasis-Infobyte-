@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="website icon" href="./images/icon.avif">
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="container">
+       <input type="text" class="display" readonly>
+
+       <div class="btn">
+            <button class="button top" onclick="cleardisplay()">AC</button>
+            <button class="button top" onclick="deletebtn()">DEL</button>
+            <button class="button top" onclick="solve('%')">%</button>
+            <button class="button operator" onclick="solve('/')">/</button>
+
+            <button class="button num" onclick="solve('7')">7</button>
+            <button class="button num" onclick="solve('8')">8</button>
+            <button class="button num" onclick="solve('9')">9</button>
+            <button class="button operator" onclick="solve('*')">x</button>
+
+            <button class="button num" onclick="solve('4')">4</button>
+            <button class="button num" onclick="solve('5')">5</button>
+            <button class="button num" onclick="solve('6')">6</button>
+            <button class="button operator" onclick="solve('-')">-</button>
+
+            <button class="button num" onclick="solve('1')">1</button>
+            <button class="button num" onclick="solve('2')">2</button>
+            <button class="button num" onclick="solve('3')">3</button>
+            <button class="button operator" onclick="solve('+')">+</button>
+       </div>
+
+       <div class="btn-end">
+            <button class="button num" onclick="solve('0')">0</button>
+            <button class="button num" onclick="solve('.')">.</button>
+            <button class="button operator" onclick="res()">=</button>
+       </div> 
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
