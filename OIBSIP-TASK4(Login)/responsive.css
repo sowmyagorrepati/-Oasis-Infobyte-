@@ -1,0 +1,231 @@
+@media screen and (max-width: 1393px) {
+    .btn {
+        width: 30%; 
+    }
+    .img {
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 960px) {
+    .btn {
+        width: 40%; 
+    }
+    .img {
+        max-width: 60%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px; 
+        width: 80%;
+        padding: 10px;
+        height: 100%;
+    }
+    .container {
+        margin: 0px;
+        width: 70%;
+    }
+    .img {
+        max-width: 45%;
+        margin-bottom: 20px; 
+    }
+    .heading {
+        font-size: 22px;
+    }
+    .sub-heading {
+        font-size: 11px;        
+    }
+    .secured-container {
+        padding: 20px;
+        width: 100%;
+    }
+    .success-message {
+        font-size: 19px; 
+    }
+    .secure-page-message {
+        font-size: 15px;
+    }
+    .content i {    
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+    #securedDashboard {
+        background-color: white;
+        width: 70%;
+        border-radius: 10px;    
+    }
+    .bg {
+        height: 100vh;
+    }
+    .custom-input {
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 14px;
+        line-height: 1;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    
+    .secured-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .secured-content img {
+        max-width: 60%; 
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-container {
+        width: 90%;
+        margin: 20px;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .img {
+        max-width: 70%;
+    }
+
+    .secured-container {
+        padding: 10px;
+    }
+
+    .heading {
+        font-size: 20px;
+        margin-bottom: 8px; 
+    }
+
+    .sub-heading {
+        font-size: 10px;
+        margin-bottom: 12px; 
+    }
+
+    .success-message {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .secure-page-message {
+        font-size: 14px;
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width: 376px) {
+    .main-container {
+        width: 95%;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .container {
+        width: 85%;
+    }
+
+    .img {
+        max-width: 80%;
+    }
+
+    .secured-container {
+        padding: 5px;
+    }
+
+    .heading {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .sub-heading {
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+
+    .success-message {
+        font-size: 16px;
+        margin-bottom: 6px; 
+    }
+
+    .secure-page-message {
+        font-size: 12px;
+        margin-bottom: 50px; 
+    }
+
+    .secured-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .secured-content img {
+        max-width: 85%; 
+        margin-bottom: 20px;
+    }
+    .secured-container i {
+        font-size: 50px; 
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-container {
+        width: 100%;
+        margin: 5px;
+        padding: 3px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .img {
+        max-width: 85%;
+    }
+
+    .secured-container {
+        padding: 3px;
+    }
+
+    .heading {
+        font-size: 16px;
+        margin-bottom: 4px; 
+    }
+
+    .sub-heading {
+        font-size: 8px;
+        margin-bottom: 8px; 
+    }
+
+    .success-message {
+        font-size: 14px;
+        margin-bottom: 4px; 
+    }
+
+    .secure-page-message {
+        font-size: 10px;
+        margin-bottom: 40px; 
+    }
+
+    .secured-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .secured-content img {
+        max-width: 85%;
+        margin-bottom: 20px;
+    }
+    .secured-container i {
+        font-size: 45px; 
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}

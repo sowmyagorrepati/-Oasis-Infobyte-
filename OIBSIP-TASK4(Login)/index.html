@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER & LOGIN</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div class="bg">
+            <div class="main-container" id="login-container">
+                <img src="./images/Login.gif" alt="" class="img">
+                <div class="container">
+                    <p class="heading">WELCOME BACK!</p>
+                    <p class="sub-heading">Login To Continue</p>
+                    <div class="box mail">
+                        <label for="loginEmail">Email Address</label>
+                        <input type="email" id="loginEmail" class="custom-input">
+                        <div id="login-email-error" class="error-message"></div> 
+                    </div>
+                    <div class="box password">
+                        <label for="loginPassword">Password</label>
+                        <div class="input-container">
+                            <input type="password" id="loginPassword" class="custom-input">
+                            <span class="eye" onclick="togglePasswordVisibility('loginPassword')">
+                                <i class="fas fa-eye" id="login-eye-icon"></i>
+                            </span>
+                        </div>
+                        <div id="login-password-error" class="error-message"></div> 
+                    </div>
+                    <button class="btn btn-primary" onclick="login()">Sign in</button>
+                    <div id="login-message" style="display: none; margin-top: 10px;"></div> 
+                    <p class="new">New User? <strong><a href="#" onclick="showRegisterForm()">Register</a></strong></p>
+                </div>
+            </div>
+
+            <div class="main-container" id="register-container" style="display: none;">
+                <img src="./images/Sign up.gif" alt="" class="img">
+                <div class="container">
+                    <p class="heading">REGISTER HERE!</p>
+                    <div class="box mail">
+                        <label for="registerEmail">Email Address</label>
+                        <input type="email" id="registerEmail" class="custom-input">
+                        <div id="register-email-error" class="error-message"></div> 
+                    </div>
+                    <div class="box password">
+                        <label for="registerPassword">Password</label>
+                        <div class="input-container">
+                            <input type="password" id="registerPassword" class="custom-input">
+                            <span class="eye" onclick="togglePasswordVisibility('registerPassword')">
+                                <i class="fas fa-eye" id="register-eye-icon"></i>
+                            </span>
+                        </div>
+                        <div id="register-password-error" class="error-message"></div> 
+                    </div>
+                    <button class="btn btn-primary" onclick="register()">Register</button>
+                    <div id="register-message" style="display: none; margin-top: 10px;"></div> 
+                    <p class="new">Already have an account?<strong><a href="#" onclick="showLoginForm()">Login</a></strong></p>
+                </div>
+            </div>
+
+            <div class="main-container" id="securedDashboard" style="display: none;">
+                <div class="secured-container">
+                    <div class="secured-content">
+                        <img src="./images/Welcome.gif" alt="">
+                        <div class="content">
+                            <i class="fas fa-check-circle"></i>
+                            <p class="success-message"><strong>Welcome, <span id="loggedInUser"></span>!</strong></p>
+                            <p class="secure-page-message">You've successfully logged in to the secure page!</p>
+                            <button class="btn btn-primary" onclick="logout()">Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
