@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-around;
+    background-color: black;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.name {
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+.tabs a {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.tabs a:hover{
+    color: coral;
+}
+
+/* Home */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slideshow {
+    0%,20% { opacity: 1; }
+    25% , 95%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.slideshow-container .slide:nth-child(1) {
+    animation: slideshow 20s infinite;
+}
+
+.slideshow-container .slide:nth-child(2) {
+    animation: slideshow 20s infinite 6s;
+}
+
+.slideshow-container .slide:nth-child(3) {
+    animation: slideshow 20s infinite 12s;
+}
+
+.slideshow-container .slide:nth-child(4) {
+    animation: slideshow 20s infinite 18s;
+}
+
+/*about*/
+.about {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.aboutimg {
+    flex-shrink: 0;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.aboutimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details {
+    max-width: 700px;
+}
+
+.details p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.details a {
+    color: #004099;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.details a:hover {
+    color: #4b92f7;
+}
+
+/*films*/
+.film {
+    padding: 80px 20px;
+    text-align: center;
+}
+.film h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+.movies{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 40px;
+    margin: 20px;
+}
+.box{
+    border: coral 2px dashed;
+    border-radius: 10px;
+}
+.box img{
+   padding-top: 10px;
+}
+.box h6{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.box p{
+    font-size: 14px;
+    font-weight: bold;
+}
+/*awards*/
+.awards {
+    padding: 90px 20px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.awards h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+.award-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 40px;
+    padding: 20px;
+}
+.award-box{
+    border: coral 2px dashed;
+    border-radius: 10px;
+    margin: 10px;
+}
+.award-box img{
+   padding-top: 10px;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+}
+.award-box p{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+}
+/*gallery*/
+#gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#gallery h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+#gallery p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: coral;
+}
+
+.grid-container {
+    columns: 5 200px;
+    column-gap: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+    div {
+      width: 150px;
+      margin: 0 1.5rem 1.5rem 0;
+      display: inline-block;
+      width: 100%;
+      border: solid 2px black;
+      padding: 5px;
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+      border-radius: 5px;
+      transition: all .25s ease-in-out;
+      &:hover img {
+        filter: grayscale(0);
+      }
+      &:hover {
+        border-color: coral;
+      }
+      img {
+        width: 100%;
+        filter: grayscale(100%);
+        border-radius: 5px;
+        transition: all .25s ease-in-out;
+      }
+    }
+  }
+  
